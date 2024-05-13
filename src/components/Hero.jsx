@@ -49,7 +49,7 @@ const Hero = () => {
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
           >
-            <span>Contact Me</span>
+            <Link to={"/contact"}><span>Contact Me</span></Link>
             <span><lord-icon
               src="https://cdn.lordicon.com/srsgifqc.json"
               trigger={isHovered === 1 ? "loop" : ""}
