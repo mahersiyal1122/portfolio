@@ -1,24 +1,24 @@
 import React from 'react'
 import { skillsLogo } from '../assets/images/assets'
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const HomePageSkills = () => {
-  gsap.registerPlugin(useGSAP,ScrollTrigger);
+  // gsap.registerPlugin(useGSAP,ScrollTrigger);
 
-  const timeline6=gsap.timeline({
-    scrollTrigger: {
-      trigger: ".skillsGsap",
-      start: "top 80%",
-      end: "top 30%", 
-      scrub: true,
-    }
-  })
-  useGSAP(()=>{
-    timeline6.fromTo(".skillsGsap1",{opacity:0,y:100},{opacity:1,y:0, duration:0.7, ease: "power2.inOut"})
-    timeline6.fromTo(".skillsGsap2",{opacity:0},{opacity:1, duration:2, ease: "power1.inOut"})
-  })
+  // const timeline6=gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".skillsGsap",
+  //     start: "top 80%",
+  //     end: "top 30%", 
+  //     scrub: true,
+  //   }
+  // })
+  // useGSAP(()=>{
+  //   timeline6.fromTo(".skillsGsap1",{opacity:0,y:100},{opacity:1,y:0, duration:0.7, ease: "power2.inOut"})
+  //   timeline6.fromTo(".skillsGsap2",{opacity:0},{opacity:1, duration:2, ease: "power1.inOut"})
+  // })
 
   const duplicatedSkillsLogo = [...skillsLogo, ...skillsLogo];
 

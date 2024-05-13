@@ -2,26 +2,26 @@ import React, { useRef } from 'react'
 import { Player } from '@lordicon/react';
 import ICON from "../assets/gifs/profile_icon.json"
 import { educationData } from "../assets/images/assets"
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Education = () => {
-    gsap.registerPlugin(useGSAP,ScrollTrigger);
+    // gsap.registerPlugin(useGSAP,ScrollTrigger);
 
-    const timeline7 = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#EducationGsap",
-            start: "top 80%",
-            end: "top 10%",
-            scrub: true,
-        }
-    })
-    useGSAP(() => {
-        timeline7.fromTo(".EducationGsap1", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.inOut" })
-        timeline7.fromTo("dotlottie-player", { x: -600, y: 200, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: 5, ease: "power1.inOut" })
-        // timeline7.fromTo(".EducationGsap2", { x: 600, y: 200, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: 2, ease: "power1.inOut", stagger: 2 })
-    })
+    // const timeline7 = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: "#EducationGsap",
+    //         start: "top 80%",
+    //         end: "top 10%",
+    //         scrub: true,
+    //     }
+    // })
+    // useGSAP(() => {
+    //     timeline7.fromTo(".EducationGsap1", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.inOut" })
+    //     timeline7.fromTo("dotlottie-player", { x: -600, y: 200, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: 5, ease: "power1.inOut" })
+    //     // timeline7.fromTo(".EducationGsap2", { x: 600, y: 200, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: 2, ease: "power1.inOut", stagger: 2 })
+    // })
 
     const playerRef = useRef({});
 
