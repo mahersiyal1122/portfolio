@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    /* background-color: #232732; */
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+@layer components{
+    .navlink a, .hero-btn button{
+        @apply bg-black px-6 py-3 rounded-lg text-base shadow-[0px_0px_5px_0px_black] cursor-pointer hover:bg-transparent hover:shadow-none hover:border-[2px] hover:border-[#db2777] hover:text-[#db2777]  transition-colors duration-200 
+    }
+    .navlink a{
+        @apply max-[700px]:bg-transparent max-[700px]:p-0 max-[700px]:shadow-none max-[700px]:border-none max-[700px]:font-medium max-[700px]:text-lg max-[700px]:hover:scale-105
+    }
+    .hero-btn button{
+        @apply  max-[880px]:text-sm max-[880px]:px-3 max-[880px]:py-2
+    }
+    .section-titles{
+        @apply text-center text-[max(5vw,36px)] font-semibold my-8 max-[700px]:mt-3
+    }
+    .pink{
+        @apply text-[#ec4899]
+    }
+    .dark-blue{
+        @apply text-[#428ffa]
+    }
+    .mid-green{
+        @apply text-[#14ffa9]
+    }
+    .vibrant-yellow{
+        @apply text-[#ffe386]
+    }
+    .vib-dark-yellow{
+        @apply text-[#f9df00]
+    }
+    .light-brown{
+        @apply text-[#fb923c];
+    }
+    .selected{
+        @apply bg-orange-600 shadow-md
+    }
+    .infinite-scroll{
+        @apply animate-[scroll_10s_linear_infinite] hover:animation_stop max-[530px]:animate-[minScroll_10s_linear_infinite]
+    }
+    .bg-grad-custom{
+        @apply from-[#2800ab4a] border border-[#1b2c68a0] bg-gradient-to-br  to-[#0000009f]  via-[#f445450d]
+    }
+    .eduaction_bg_grad_custom{
+        @apply border border-transparent hover:border-[#1b2c68a0]  overflow-hidden cursor-pointer
+    }
+    .ed_hover::before{
+        @apply content-[""] absolute w-[50%] h-40 from-[#2a31f3ed] bg-gradient-to-r to-[#0c14ff]  via-[#f44545] opacity-0 hover:opacity-100 
+    }
+    .ed_hover::after{
+        @apply content-[""] absolute inset-[2px] from-[#00000077] bg-gradient-to-r  to-[#0000006c]  via-[#2800ab59] bg-black rounded-xl border border-[#1b2c68a0] hover:border-none z-20
+    }
+
+
+    .projectDetail_images::-webkit-scrollbar{
+        @apply hidden
+    }
+    /* .contact input, .contact textarea, .contact p{
+        @apply mb-3
+    } */
+
+    .contact input, .contact textarea{
+        @apply bg-[#10172d] border border-[#353a52] rounded-md mb-4 mt-2 py-3 text-sm  px-[10px] outline-none  focus-visible:border-[#14ffa9] text-white max-[530px]:text-xs
+    }
+    .contact button{
+        @apply w-32 h-12 rounded-lg bg-[#f44545] font-medium text-lg hover:bg-transparent hover:border hover:border-[#db2777] hover:text-[#db2777] transition-colors max-[780px]:text-base max-[780px]:w-28 max-[780px]:h-11 max-[530px]:w-24 max-[530px]:h-10 max-[530px]:rounded-md
+    }
+    .contact p{
+        @apply max-[530px]:text-[14px]
+    }
+
+}
+.ed_hover::before{
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%,-50%);
+}
+
+
+
+@layer utilities{
+    .animation_stop{
+        animation-play-state: paused;
+    }
+}
+
+/* from-[#2800ab4a] border border-[#1b2c68a0] bg-gradient-to-r  to-[#0000009f]  via-[#f445450d] */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+   100%{
+        transform: translateX(calc((-15rem)*10));
+    }
+}
+
+@keyframes minScroll {
+    0% {
+        transform: translateX(0);
+    }
+   100%{
+        transform: translateX(calc((-10rem)*10));
+    }
+}
