@@ -44,6 +44,21 @@ import p5_i2 from "../images/projectPics/p5_i2.png"
 import p5_i3 from "../images/projectPics/p5_i3.png"
 import p5_i4 from "../images/projectPics/p5_i4.png"
 import p5_i5 from "../images/projectPics/p5_i5.png"
+import p6_i1 from "../images/projectPics/p6_i1.png"
+import p6_i2 from "../images/projectPics/p6_i2.png"
+import p6_i3 from "../images/projectPics/p6_i3.png"
+import p6_i4 from "../images/projectPics/p6_i4.png"
+import p6_i5 from "../images/projectPics/p6_i5.png"
+import p7_i1 from "../images/projectPics/p7_i1.png"
+import p7_i2 from "../images/projectPics/p7_i2.png"
+import p7_i3 from "../images/projectPics/p7_i3.png"
+import p7_i4 from "../images/projectPics/p7_i4.png"
+import p7_i5 from "../images/projectPics/p7_i5.png"
+import p8_i1 from "../images/projectPics/p8_i1.png"
+import p8_i2 from "../images/projectPics/p8_i2.png"
+import p8_i3 from "../images/projectPics/p8_i3.png"
+import p8_i4 from "../images/projectPics/p8_i4.png"
+import p8_i5 from "../images/projectPics/p8_i5.png"
 
 const assets = {
     profile_pic: profilePic,
@@ -126,18 +141,45 @@ const educationData = [
 const myProjectData = [
     {
         id: 1,
-        title: "E-commerce Shopping Website",
-        description: " Introducing my ecommerce shopping website, meticulously crafted on the Full MERN StackIntroducing my ecommerce shopping website, meticulously crafted on the Full MERN Stack. Boasting full responsiveness across various screen sizes, our platform offers users the convenience of ordering food from home. Central to our platform is the intuitive admin panel, allowing administrators to seamlessly add new products and remove existing ones. Our system automatically updates new collections whenever fresh products/outfits are added, ensuring a dynamic and engaging shopping experience.",
-        img: p1_i1,
-        i1: p1_i1,
-        i2: p1_i2,
-        i3: p1_i3,
-        i4: p1_i4,
-        i5: p1_i5,
-        github: `https://github.com/mahersiyal1122/E-commerce-full-MERN-stack-project`,
+        title: "Youtube Clone",
+        description: `I'm thrilled to share my YouTube Clone project, crafted with React.js, Tailwind CSS, JavaScript, React Router DOM, Axios API, and more. Leveraging the YouTube Data API v3 from Google Cloud, it fetches comprehensive video data including likes, comments, views, thumbnails, and channel details such as profile, name, and subscribers.This website is fully responsive, ensuring a seamless experience across all devices.`,
+        img: p8_i1,
+        i1: p8_i1,
+        i2: p8_i2,
+        i3: p8_i3,
+        i4: p8_i4,
+        i5: p8_i5,
+        github: `https://github.com/mahersiyal1122/Youtube-Clone`,
+        liveDemo: `https://youtube-mrzee.vercel.app/`
     },
     {
         id: 2,
+        title: "Gemini Clone",
+        description: `This project showcases my frontend skills with a Gemini clone. Using React.js, Tailwind CSS, HTML5, CSS3, JavaScript, and Axios API, I've built a website that integrates Google Gemini API for smooth data handling. It offers both dark and light themes that users can switch between using a button in the navbar. The site is designed to work perfectly on any device, ensuring a seamless experience. Explore this project to see how I combine technical know-how with user-friendly design for a polished result.`,
+        img: p7_i1,
+        i1: p7_i1,
+        i2: p7_i2,
+        i3: p7_i3,
+        i4: p7_i4,
+        i5: p7_i5,
+        github: `https://github.com/mahersiyal1122/Gemini-Clone`,
+        liveDemo: `https://gemini-mrzee.vercel.app/`
+    },
+    {
+        id: 3,
+        title: "My Portfolio",
+        description: `My portfolio showcases my expertise in frontend development, leveraging React.js, Tailwind CSS, HTML5, CSS3, JavaScript, and GSAP. It features 4 main pages: Home, About, Projects, and Contact Me. The About page introduces me briefly along with my skills and educational background. In the Projects section, I highlight projects I've developed, providing GitHub links for code access and website links where applicable. The entire site is designed to be fully responsive, ensuring optimal viewing on all devices.`,
+        img: p6_i1,
+        i1: p6_i1,
+        i2: p6_i2,
+        i3: p6_i3,
+        i4: p6_i4,
+        i5: p6_i5,
+        github: `https://github.com/mahersiyal1122/portfolio`,
+        liveDemo: `https://portfolio-mrzee.vercel.app/`
+    },
+    {
+        id: 4,
         title: "Food Delivery App E-commerce Website",
         description: "Introducing my innovative food delivery application, built on the robust Full MERN (Mongoose, Expressjs, Reactjs, Nodejs) Stack and featuring the secure and convenient Stripe payment method made on Vite frameworkIntroducing my innovative food delivery application, built on the robust Full MERN (Mongoose, Expressjs, Reactjs, Nodejs) Stack and featuring the secure and convenient Stripe payment method made on Vite framework. This app is designed to offer a seamless experience across various devices, ensuring full responsiveness across different screen sizes.",
         img: p2_i1,
@@ -150,7 +192,19 @@ const myProjectData = [
         liveDemo: `https://food-del-app-mrzee.vercel.app/`
     },
     {
-        id: 3,
+        id: 5,
+        title: "E-commerce Shopping Website",
+        description: " Introducing my ecommerce shopping website, meticulously crafted on the Full MERN StackIntroducing my ecommerce shopping website, meticulously crafted on the Full MERN Stack. Boasting full responsiveness across various screen sizes, our platform offers users the convenience of ordering food from home. Central to our platform is the intuitive admin panel, allowing administrators to seamlessly add new products and remove existing ones. Our system automatically updates new collections whenever fresh products/outfits are added, ensuring a dynamic and engaging shopping experience.",
+        img: p1_i1,
+        i1: p1_i1,
+        i2: p1_i2,
+        i3: p1_i3,
+        i4: p1_i4,
+        i5: p1_i5,
+        github: `https://github.com/mahersiyal1122/E-commerce-full-MERN-stack-project`,
+    },
+    {
+        id: 6,
         title: "Netflix Landing Page UI Design",
         description: `This project is based solely on HTML and CSS. It serves as a landing page for Netflix.
         This project demonstrates my skills in using HTML and CSS to create attractive UI web designs and web pages. I've focused on emulating the design of a popular platform like Netflix, showing my ability to recreate complex layouts and styles effectively.`,
@@ -164,7 +218,7 @@ const myProjectData = [
         liveDemo: `https://netflix-mrzee.vercel.app/`
     },
     {
-        id: 4,
+        id: 7,
         title: "X.com Twitter UI Design",
         description: `This project shows my early progress in web development using HTML and Tailwind CSS. It highlights my skill in organizing web content with HTML and creating clean styles with Tailwind CSS.
         The focus of the project is on simplicity and user-friendly design, demonstrating my ability to make attractive and functional web interfaces. It reflects my commitment to delivering top-notch work in web development.`,
@@ -178,7 +232,7 @@ const myProjectData = [
         liveDemo: `https://x-twitter-mrzee.vercel.app/`
     },
     {
-        id: 5,
+        id: 8,
         title: "Spotify Player",
         description: `This project is based on HTML, CSS, and JavaScript. It allows users to play songs from different albums. New song albums can be added by creating a new folder inside the "songs" directory. Within this new album's song folder, a JSON file is used to provide the album's name and description.
         The website is responsive, ensuring usability across various screen sizes. The minimum responsive width is set to 415px.`,

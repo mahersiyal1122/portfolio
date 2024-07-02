@@ -10,7 +10,7 @@ const Navbar = () => {
     const timeline1=gsap.timeline({})
     useGSAP(() => {
         timeline1.fromTo(".NavGsap1", { opacity: 0, y: -10 }, { delay: 0.5, opacity: 1, y: 0, duration: 0.2, ease: "power1.inOut" })
-        timeline1.fromTo(".NavGsap2", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.2, stagger: 0.5, ease: "power1.inOut" })
+        gsap.fromTo(".NavGsap2", { opacity: 0}, { opacity: 1, y: 0, duration: 0.2, stagger: 0.3, ease: "power1.inOut" })
 
     }, [])
     const [visibility,setVisibility]=useState(false)
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className='NavGsap1 flex w-1/5 justify-center items-center '>
                     <Link to={"/"}><img className='cursor-pointer object-cover object-top rounded-full h-14 w-14 max-[530px]:h-11 max-[530px]:w-11' src={nav_pic} alt="" /></Link>
                 </div>
-                <nav className='navlink flex items-center justify-around w-3/5 max-[900px]:w-4/5 max-[530px]:hidden'>
+                <nav className='NavGsap2 navlink flex items-center justify-around w-3/5 max-[900px]:w-4/5 max-[530px]:hidden'>
                     <Link className='NavGsap2' to={"/"}>Home</Link>
                     <Link className='NavGsap2' to={"/about"} >About</Link>
                     <Link className='NavGsap2' to={"/myprojects"}>Projects</Link>
